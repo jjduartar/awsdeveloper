@@ -36,9 +36,9 @@ function App() {
     setFormData(initialFormState)
   }
 
-  const deleteNote = async ({ element }) => {
-    await API.graphql({ query: deleteTodo, variables: { input: element.id } })
-    const newNotesArray = notes.filter(note => note.id !== element.id);
+  const deleteNote = async ({ id }) => {
+    await API.graphql({ query: deleteTodo, variables: { input: {id} } })
+    const newNotesArray = notes.filter(note => note.id !== id);
     setFormData(initialFormState)
     setNotes(newNotesArray)
   }
