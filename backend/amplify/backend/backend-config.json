@@ -6,5 +6,23 @@
       "dependsOn": [],
       "customAuth": false
     }
+  },
+  "api": {
+    "awsdeveloperbackend": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "description": "API de prueba para Amplify y graphQL"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
+      }
+    }
   }
 }

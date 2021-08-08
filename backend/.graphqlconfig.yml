@@ -1,0 +1,14 @@
+projects:
+  awsdeveloperbackend:
+    schemaPath: >-
+      home/josue/Documentos/AWS Developer/Amplify React
+      App/tecguru-autenticacion/src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.js
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
