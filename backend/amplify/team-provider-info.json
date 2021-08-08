@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "awsdeveloperbackendc3e6b70d": {}
+      },
+      "function": {
+        "S3Triggerb0091d90": {
+          "deploymentBucketName": "amplify-awsdeveloperbackend-staging-171241-deployment",
+          "s3Key": "amplify-builds/S3Triggerb0091d90-5a736c57317651485233-build.zip"
+        }
       }
     }
   }
