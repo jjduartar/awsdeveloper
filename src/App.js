@@ -71,12 +71,12 @@ function App() {
       />
 
       <div style={{ marginBottom: 30 }}>
-        {notes.map(element => {
+        {notes.map((element) => {
           return (<div style={{ border: '1px solid black' }}>
             <h2>{element.name}</h2>
             <h3>{element.name}</h3>
             <img src={element.image} width="200px"></img>
-            <button onClick={() => deleteNote(element.id)}>Borrar nota</button>
+            <button onClick={() => deleteNote(element)}>Borrar nota</button>
           </div>)
         })}
       </div>
