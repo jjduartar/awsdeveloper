@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "awsdeveloperbackendc3e6b70d": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
